@@ -31,6 +31,8 @@ define( 'DB_PASSWORD', '' );
 // Database hostname
 define( 'DB_HOST', 'localhost' );
 
+//Estoy realizando un cambio
+
 /*
 // The name of the database for WordPress
 define( 'DB_NAME', 'sql8591269' );

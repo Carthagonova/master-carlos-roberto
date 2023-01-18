@@ -1,0 +1,246 @@
+/*
+Theme Name: asdrubal
+Author: Alumno Master SEO Técnico
+Description: Tema personalizado alumno
+Version: 1.0.0
+*/
+/* @import 'import.css'; */
+/* Aquí no funciona el CSS y puedo poner cualquier tipo de dudas */
+:root{
+    --verde: rgb(99, 174, 99);
+    --azul: rgb(54, 167, 198);
+    --yellow: rgb(208, 170, 54);
+    --espaciado: space-evenly;
+}
+nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: var(--espaciado);
+    position: fixed;
+    width: 100%;
+    background: white;
+    margin: 0px;
+    top: 0;
+    height: 50px;
+    padding: 0;
+}
+.h1mayorcito {
+    position: sticky;
+    top: 16px;
+}
+.cerrar.elemento {
+    position: fixed;
+    top: 8px;
+    right: 16px;
+    background: red;
+    padding: 12px;
+    border-radius: 100%;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+body {
+    margin: 0px;
+    margin-top: 70px;
+    margin-right: 12px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.cm {
+    background: burlywood;
+    width: 10cm;
+    height: 10cm;
+}
+.mm {
+    background: lime;
+    width: 100mm;
+    height: 100mm;
+}
+.in {
+    width: 3.94in;
+    background: red;
+    height: 3.94in;
+}
+.px {
+    background: yellow;
+    width: 378px;
+    height: 378px;
+}
+.pt {
+    background: chocolate;
+    width: 288pt;
+    height: 288pt;
+}
+.pc {
+    background: violet;
+    width: 24pc;
+    height: 24pc;
+}
+.absolutas {
+    display: flex;
+    flex-wrap: wrap;
+}
+.em {
+    background: bisque;
+    width: 23em;
+    height: 23em;
+}
+.rem {
+    background: purple;
+    width: 23em;
+    height: 23em;
+}
+.vh {
+    width: 38vh;
+    background: orange;
+    height: 38vh;
+}
+.vw {
+    background: var(--verde);
+    width: 50vw;
+    height: 50vw;
+}
+.porcentaje {
+    background: cadetblue;
+    width: 50%;
+    height: 50%;
+}
+   /* Aquí no funciona el CSS y puedo poner cualquier tipo de dudas */
+/*a[href^="http:"]{
+  color:red;
+}*/
+p.intro {
+    width: calc(100% - 40px);
+    margin:auto;
+background: yellow;
+color: black;}
+.intro {
+background: var(--verde);
+}
+#preguntas-frecuentes {
+padding: 15px;
+}
+.intro.master {
+font-size: 24px;
+}
+/* .intro.jueves {
+font-family: fantasy;
+}*/
+/*
+.intro div {
+filter: blur(2px);
+}*/
+.intro {
+    background: blue;
+    color: white;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+td, tr, table {
+border: 1px solid black;
+border-spacing: 0px;
+}
+div .intro {
+text-align: right;
+}
+.intro, .tablita, th {
+font-weight: 800;
+}
+.herencias > p {
+text-align: center;
+}
+.herencias p {
+background: aqua;
+}
+div#imagenfalsa {
+    height: 217px;
+    width: 600px;
+    background-color: black;
+    background-image: url(/imagenes/candados.png);
+    margin: 80px auto;
+    padding: 60px;
+    /* background-attachment: fixed; */
+    background-size: 400px 208.5px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border: 50px solid var(--verde);
+}
+a[href^="http:"] {
+    padding-right: 1.5em;
+    background-image: url(/imagenes/candado-r.png);
+    z-index: 3;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    color: rgba(222, 14, 14, 0.897);
+}
+a[target="_blank"]:not(a[href^="http:"]) {
+    color: var(--verde);
+}
+.cerrar.elemento {
+    display: none;
+}
+::selection {
+    background: purple;
+    color: white;
+}
+th {
+    animation-name: cambiocolor;
+    animation-duration: 2s;
+    background: var(--azul);
+}
+@keyframes cambiocolor {
+    0%{background: var(--verde);}
+    100%{background: var(--azul);}
+}
+img {
+    max-width: 100%;
+}
+.blocazo {
+    margin: auto;
+    width: 90%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.bloquecito {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: green;
+}
+.bloquecito a{
+    color:white;
+    text-decoration: none;
+}
+/* Responsive */
+@media all and (max-width: 700px){
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    nav>ul li {
+        margin: 6px 0px;
+    }
+}
+@media all and (min-width: 2200px)
+{
+    * {
+        max-width: 2200px;
+        margin: auto;
+    }
+}

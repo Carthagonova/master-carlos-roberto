@@ -225,6 +225,29 @@ img {
     color:white;
     text-decoration: none;
 }
+.flexcenter{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+.post-card a {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    background: lightblue;
+    justify-content: space-around;
+    padding: 0px;
+}
+.post-card a .post-name{
+    text-decoration: auto;
+    background: green;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
+}
 /* Responsive */
 @media all and (max-width: 700px){
     nav>ul {

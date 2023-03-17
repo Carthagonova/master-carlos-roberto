@@ -1,1 +1,1 @@
-<?php echo '<h1>Hola esta es la página de inicio</h1>';?>
+<h1>Meh, es un 404, esta página no existe</h1>
